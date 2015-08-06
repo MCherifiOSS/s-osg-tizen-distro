@@ -29,6 +29,8 @@ CORE_IMAGE_BASE_INSTALL += "qtbase-plugins"
 #CORE_IMAGE_BASE_INSTALL += "qtwebkit"
 #CORE_IMAGE_BASE_INSTALL += "qtquickcontrols-qmlplugins"
 CORE_IMAGE_BASE_INSTALL += "packagegroup-qt5-toolchain-target"
+# For http://doc.qt.io/qt-5/qml-qtwebkit-webview.html script to run
+CORE_IMAGE_BASE_INSTALL += "qtdeclarative-tools qtquickcontrols-qmlplugins"
 
 # Profile specific configuration - default is Tizen common
 CORE_IMAGE_BASE_INSTALL += "${IMAGECONFIG}"
