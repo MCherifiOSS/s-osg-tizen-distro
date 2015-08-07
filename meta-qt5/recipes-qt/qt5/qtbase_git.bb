@@ -178,6 +178,7 @@ do_configure() {
     fi
 
     ${S}/configure -v \
+	-qpa wayland \
         -opensource -confirm-license \
         -sysroot ${STAGING_DIR_TARGET} \
         -no-gcc-sysroot \
